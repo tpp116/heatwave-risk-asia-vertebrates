@@ -1,5 +1,5 @@
 # =========================================================
-# Species-level heatwave risk assessment (ESA framework):AMPHIBIANS
+# Species-level heatwave risk assessment (ESA framework): taking AMPHIBIANS as a example
 # =========================================================
 
 library(data.table)
