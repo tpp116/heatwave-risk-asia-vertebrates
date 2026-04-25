@@ -10,10 +10,10 @@ library(patchwork)
 # 1. Load data
 # =========================================================
 
-MAMMALS <- read.csv("G:/huijing/biological/MAMMALS_exposure_sensitivity_suitability_risk.csv")
-AMPHIBIANS <- read.csv("G:/huijing/biological/AMPHIBIANS_exposure_sensitivity_suitability_risk.csv")
-REPTILES <- read.csv("G:/huijing/biological/REPTILES_exposure_sensitivity_suitability_risk.csv")
-BIRD <- read.csv("G:/huijing/biological/Bird_exposure_sensitivity_suitability_risk.csv")
+MAMMALS <- read.csv("F:/huijing/biological/MAMMALS_exposure_sensitivity_suitability_risk.csv")
+AMPHIBIANS <- read.csv("F:/huijing/biological/AMPHIBIANS_exposure_sensitivity_suitability_risk.csv")
+REPTILES <- read.csv("F:/huijing/biological/REPTILES_exposure_sensitivity_suitability_risk.csv")
+BIRD <- read.csv("F:/huijing/biological/Bird_exposure_sensitivity_suitability_risk.csv")
 
 # =========================================================
 # 2. Harmonize elevation variable
@@ -120,8 +120,8 @@ final_plot <- p1 + p2 + plot_layout(ncol = 2)
 # 7. Save outputs
 # =========================================================
 
-write.csv(elev_summary, "path_to/elevation_summary.csv", row.names = FALSE)
-write.csv(elev_taxon_summary, "path_to/elevation_by_taxon.csv", row.names = FALSE)
+write.csv(elev_summary, "F:/huijing/biological/elevation_summary.csv", row.names = FALSE)
+write.csv(elev_taxon_summary, "F:/huijing/biological/elevation_by_taxon.csv", row.names = FALSE)
 
-ggsave("path_to/elevation_risk_plot.png",
+ggsave("F:/huijing/biological/elevation_risk_plot.png",
        final_plot, width = 12, height = 5, dpi = 600)
