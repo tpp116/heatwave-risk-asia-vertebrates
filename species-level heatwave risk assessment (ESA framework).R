@@ -117,7 +117,7 @@ if (length(breaks) < 2) {
 
 write.csv(
   data,
-  "path_to/output_species_heatwave_risk.csv",
+  "F:/huijing/biological/output_species_heatwave_risk.csv",
   row.names = FALSE
 )
 
